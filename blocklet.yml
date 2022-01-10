@@ -1,0 +1,53 @@
+name: invited-user-only-demo
+version: 1.0.0
+main: .
+repository:
+  type: git
+  url: 'git+ssh://git@github.com/blocklet/minimalist-html-demo.git'
+author:
+  name: Arcblock
+license: MIT
+files:
+  - blocklet.md
+  - README.md
+  - logo.png
+  - index.html
+title: Invited User Only Demo
+keywords:
+  - static
+  - demo
+  - html
+description: A blocklet that shows how to configure only invite login
+group: static
+specVersion: 1.2.1
+did: z8iZv4e7JAJP4t8kfRzswGBs52kQ8MH5V9ypH
+community: ''
+documentation: ''
+homepage: ''
+logo: logo.png
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: '*'
+    port: BLOCKLET_PORT
+    protocol: tcp
+    services:
+      - name: '@abtnode/auth-service'
+        config:
+          invitedUserOnly: not-first
+environments: []
+screenshots: []
+scripts: {}
+timeout:
+  start: 60
+requirements:
+  abtnode: '>=1.1.0'
+  os: '*'
+  cpu: '*'
+payment:
+  price: []
+  share: []
+children: []
+capabilities:
+  clusterMode: false
