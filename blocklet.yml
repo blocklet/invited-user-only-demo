@@ -1,5 +1,5 @@
 name: invited-user-only-demo
-version: 1.0.0
+version: 1.1.0
 main: .
 repository:
   type: git
@@ -19,7 +19,7 @@ keywords:
   - html
 description: A blocklet that shows how to configure only invite login
 group: static
-specVersion: 1.2.1
+specVersion: 1.2.3
 did: z8iZv4e7JAJP4t8kfRzswGBs52kQ8MH5V9ypH
 community: ''
 documentation: ''
@@ -36,6 +36,7 @@ interfaces:
       - name: '@abtnode/auth-service'
         config:
           invitedUserOnly: not-first
+          blockUnauthenticated: true
 environments: []
 screenshots: []
 scripts: {}
@@ -51,3 +52,4 @@ payment:
 children: []
 capabilities:
   clusterMode: false
+  component: true

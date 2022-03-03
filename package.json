@@ -1,6 +1,6 @@
 {
   "name": "invited-user-only-demo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": ".",
   "repository": "git@github.com:blocklet/invited-user-only-demo.git",
   "author": "Arcblock",
