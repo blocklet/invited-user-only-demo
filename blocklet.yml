@@ -1,9 +1,9 @@
 name: invited-user-only-demo
-version: 1.1.0
+version: 1.1.1
 main: .
 repository:
   type: git
-  url: 'git+ssh://git@github.com/blocklet/minimalist-html-demo.git'
+  url: git+ssh://git@github.com/blocklet/minimalist-html-demo.git
 author:
   name: Arcblock
 license: MIT
@@ -19,7 +19,7 @@ keywords:
   - html
 description: A blocklet that shows how to configure only invite login
 group: static
-specVersion: 1.2.3
+specVersion: 1.2.4
 did: z8iZv4e7JAJP4t8kfRzswGBs52kQ8MH5V9ypH
 community: ''
 documentation: ''
@@ -33,9 +33,9 @@ interfaces:
     port: BLOCKLET_PORT
     protocol: tcp
     services:
-      - name: '@abtnode/auth-service'
+      - name: auth
         config:
-          invitedUserOnly: not-first
+          invitedUserOnly: invited
           blockUnauthenticated: true
 environments: []
 screenshots: []
